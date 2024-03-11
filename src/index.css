@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Riot&family=Roboto&display=swap');
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.navbar{
+  min-height:10px;
+  padding: 0%;
+  font-family: 'Playfair Display', serif;
+}
+.navbar  a {
+  font-size: 15.2px;
+  
+  font-weight: bold;
+}
+.navbar  a:hover
+{
+  color:coral;
+}
+.navbar button:hover
+{
+  color: white;
+}
+.modal-body #login-tab:hover,
+.modal-body #register-tab:hover
+{
+  color:blueviolet;
+}
+.auth li:nth-child(1)
+{
+  border-right: 1px solid black;
+}
+.auth a:hover
+{
+  color: whitesmoke;
+  
+} 
+.col-md-4 .col-12,
+.col-12 .card,
+.card img
+{
+  border-radius: 0;
+}
+.card-img-top
+{
+  object-fit: cover;
+}
+.card-body .card-text
+{
+  font-size: 12px;
+  padding: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+.card-footer small
+{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.7rem;
+  
+}
+.card-footer i:hover
+{
+  color: red;
+}
+.dishName
+{
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.2rem;
+ 
+}
+.dishName:hover
+{
+  color: rgba(47, 34, 34, 0.783);
+}
+.col-md-4 .col-12,
+.col-12 .card:hover
+{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: pointer;
+}
+.cartPickupDetails
+.form-control{
+  border-radius:0;
+  margin-top: 2px;
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  color:cadetblue
+}
+.cartPickupDetails
+.form-group> input
+{
+  color: cadetblue;
+}
+.cartPickupDetails
+
+{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
+}
+#loginRegisterModal ,
+#loginRegisterModal .form-control
+
+{
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.custom-buttons
+{
+  
+  border:0;
+  background: transparent;
+  color:rgba(10, 48, 84, 0.861) !important;
+  margin: 2px 24px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+}
+.custom-buttons.active
+{
+  border-bottom: 3px solid #198754;
+  color:#198754 !important;
+}
+.image-box
+{
+  transition: 0.2px;
+}
+.image-box:hover
+{
+  box-shadow: 0 0 5px #000;
+  transform: scale(1.05);
+}
