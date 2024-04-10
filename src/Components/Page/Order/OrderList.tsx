@@ -8,6 +8,7 @@ import { RootState } from "../../../Storage/Redux/store";
 import OrderListProps from "./OrderListType";
 import { getStatusColor } from "../../../Helpers";
 import { SD_Status } from "../../../Utility/SD";
+import { withAuth } from "../../../HOC";
 
 function OrderList({ orderData, isLoading }: OrderListProps) {
   const userId = useSelector((state: RootState) => state.userAuthStore.id);
@@ -129,4 +130,4 @@ function OrderList({ orderData, isLoading }: OrderListProps) {
   );
 }
 
-export default OrderList;
+export default withAuth(OrderList);

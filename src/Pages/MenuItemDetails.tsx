@@ -8,6 +8,7 @@ import { apiResponse, userModel } from "../Interfaces";
 import { toastNotify } from "../Helpers";
 import { useSelector } from "react-redux";
 import { RootState } from "../Storage/Redux/store";
+import { withAuth } from "../HOC";
 //userid=be2d4a3f-88c0-4097-a884-2e9844024c5c
 
 function MenuItemDetails() {
@@ -175,4 +176,4 @@ function MenuItemDetails() {
   );
 }
 
-export default MenuItemDetails;
+export default withAuth(MenuItemDetails);

@@ -5,6 +5,7 @@ import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import { PaymentForm } from "../Components/Page/Payment";
 import { OrderSummary } from "../Components/Page/Order";
+import { withAuth } from "../HOC";
 
 function Payment() {
   const {
@@ -37,4 +38,4 @@ function Payment() {
   );
 }
 
-export default Payment;
+export default withAuth(Payment);

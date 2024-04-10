@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useDeleteMenuItemMutation, useGetMenuItemsQuery } from "../../Apis/menuItemApi";
 import { MainLoader } from "../../Components/Page/Common";
+import { withAuth } from "../../HOC";
 import { menuItemModel } from "../../Interfaces";
 
 function MenuItemList() {
@@ -37,7 +38,7 @@ function MenuItemList() {
             <h2
               className="mb-4"
               style={{
-                color: "darkseagreen",
+                color: "rgb(46, 170, 100)",
                 fontFamily: "'Libre Franklin', sans-serif",
               }}
             >
@@ -46,9 +47,9 @@ function MenuItemList() {
             <button
               className="btn btn-primary ms-auto"
               style={{
-                backgroundColor: "darkseagreen",
+                backgroundColor: "rgb(46, 170, 100)",
                 color: "white",
-                boxShadow: "0 0 2px 0px",
+                
                 border: "none",
               }}
               onClick={() =>
@@ -140,4 +141,4 @@ function MenuItemList() {
   );
 }
 
-export default MenuItemList;
+export default withAuth(MenuItemList);

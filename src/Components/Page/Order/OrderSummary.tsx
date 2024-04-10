@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useUpdateOrderHeaderMutation } from "../../../Apis/orderApi";
 import { getStatusColor } from "../../../Helpers";
+import { withAuth } from "../../../HOC";
 import { cartItemModel } from "../../../Interfaces";
 import { RootState } from "../../../Storage/Redux/store";
 import { SD_Roles, SD_Status } from "../../../Utility/SD";
@@ -172,4 +173,4 @@ function OrderSummary({ data, userInput }: OrderSummaryProps) {
   );
 }
 
-export default OrderSummary;
+export default withAuth(OrderSummary);
